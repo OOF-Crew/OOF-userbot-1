@@ -1,13 +1,20 @@
 """ Userbot initialization. """
 
 import os
-
 import sys
-
+import asyncio
+import pylast
+import time
 from telethon.sessions import StringSession
 from telethon import TelegramClient
-
+from logging import basicConfig, getLogger, INFO, DEBUG
+from distutils.util import strtobool as sb
+from pySmartDL import SmartDL
+from requests import get
 from var import Var
+
+StartTime = time.time()
+userbotversion = "2.1.0"
 
 os.system("pip install --upgrade pip")
 if Var.STRING_SESSION:
@@ -17,24 +24,10 @@ else:
     session_name = "startup"
     bot = TelegramClient(session_name, Var.APP_ID, Var.API_HASH)
 
-
-CMD_LIST = {}
-# for later purposes
-CMD_HELP = {}
-INT_PLUG = ""
-LOAD_PLUG = {}
-
 # PaperPlaneExtended Support Vars
 ENV = os.environ.get("ENV", False)
 """ PPE initialization. """
 
-from logging import basicConfig, getLogger, INFO, DEBUG
-from distutils.util import strtobool as sb
-import asyncio
-
-import pylast
-from pySmartDL import SmartDL
-from requests import get
 # Bot Logs setup:
 if bool(ENV):
     CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -77,9 +70,6 @@ if bool(ENV):
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
 
-    # Custom (forked) repo URL and BRANCH for updater.
-    UPSTREAM_REPO_URL = os.environ.get("UPSTREAM_REPO_URL","https://github.com/100101110/userbot-100101110.git")
-
     # Console verbose logging
     CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
 
@@ -110,7 +100,9 @@ if bool(ENV):
     ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
     AUTONAME = os.environ.get("AUTONAME", None)
     LESS_SPAMMY = os.environ.get("LESS_SPAMMY", True)
-    oof_pack = os.environ.get("oof_pack", None)
+    UPSTREAM_REPO_URL = os.environ.get(
+    "UPSTREAM_REPO_URL",
+    "https://github.com/100101110/userbot-100101110.git")
 
     # Time & Date - Country and Time Zone
     COUNTRY = str(os.environ.get("COUNTRY", ""))
@@ -147,16 +139,16 @@ else:
     # Put your ppe vars here if you are using local hosting
     PLACEHOLDER = None
 
-# Setting Up CloudMail.ru and MEGA.nz extractor binaries,
-# and giving them correct perms to work properly.
+# Setting Up CloudMail.ru and MEGA.nz extractor binaries.
 if not os.path.exists('bin'):
     os.mkdir('bin')
-
 binaries = {
     "https://raw.githubusercontent.com/yshalsager/megadown/master/megadown":
     "bin/megadown",
     "https://raw.githubusercontent.com/yshalsager/cmrudl.py/master/cmrudl.py":
-    "bin/cmrudl"
+    "bin/cmrudl",
+    "https://raw.githubusercontent.com/adekmaulana/python-scripts/master/shell/megadirect":
+    "bin/megadirect"
 }
 
 for binary, path in binaries.items():
@@ -172,3 +164,7 @@ LASTMSG = {}
 CMD_HELP = {}
 ISAFK = False
 AFKREASON = None
+CMD_LIST = {}
+# for later purposes
+INT_PLUG = ""
+LOAD_PLUG = {}
