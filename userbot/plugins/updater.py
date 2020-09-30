@@ -23,7 +23,7 @@ from userbot.system import dev_cmd
 from var import Var
 
 # -- Constants -- #
-UPSTREAM_REPO_URL = "https://github.com/MarvynSTAR/OOF-UserBot.git"
+UPSTREAM_REPO_URL = "https://github.com/ahbohhh/OOF-userbot.git"
 HEROKU_GIT_REF_SPEC = "HEAD:refs/heads/master"
 DELETE_TIMEOUT = 4
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "100101110"
