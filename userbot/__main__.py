@@ -60,7 +60,7 @@ for name in files:
 
 import userbot._core
 
-print("USERBOT-100101110 in esecuzione, test con .alive")
+print("OOF-userbot avviato, test con .alive")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
