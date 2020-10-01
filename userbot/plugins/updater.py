@@ -138,7 +138,7 @@ def generate_change_log(git_repo, diff_marker):
 async def deploy_start(tgbot, message, refspec, remote):
     await message.edit(RESTARTING_APP)
     await message.edit(
-        "Aggiornato correttamente fai .alive per vedere se funziona tutto\nI creatori originali del plugin sono© @FRIDAYOT"
+        "Aggiornamento fai .alive per vedere se ho finito\nI creatori originali del plugin sono© @FRIDAYOT"
     )
     await remote.push(refspec=refspec)
     await tgbot.disconnect()
