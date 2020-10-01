@@ -29,7 +29,7 @@ FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
 
 @command(pattern="^.autopic", outgoing=True)
 async def autopic(event):
-    await event.edit(f"Autopic avviato.") 
+    await event.edit(f"Si fratm ho avviato autopic.") 
     downloaded_file_name = "userbot/original_pic.png"
     downloader = SmartDL(Var.DOWNLOAD_PFP_URL_CLOCK, downloaded_file_name, progress_bar=False)
     downloader.start(blocking=False)
@@ -60,7 +60,7 @@ async def autopic(event):
         
 @bot.on(dev_cmd(pattern="autoname"))  # pylint:disable=E0602
 async def _(event):
-    await event.edit(f"Auto Name avviato.") 
+    await event.edit(f"fratello ho avviato autoname.") 
     while True:
         DM = time.strftime("%d-%m-%y")
         HM = time.strftime("%H:%M")
@@ -79,7 +79,7 @@ async def _(event):
 
 @bot.on(dev_cmd("autobio"))  # pylint:disable=E0602
 async def _(event):
-    await event.edit(f"Auto bio avviata.") 
+    await event.edit(f"weeee ho avviato autobio solo per te.") 
     while True:
         DMY = time.strftime("%d.%m.%Y")
         HM = time.strftime("%H:%M:%S")
@@ -143,7 +143,7 @@ BIO_STRINGS = [
 
 @bot.on(dev_cmd(pattern="monkeybio"))  # pylint:disable=E0602
 async def _(event):
-    await event.edit(f"monkey bio avviata.") 
+    await event.edit(f"beh ho avviato mokeybio.") 
     while True:
         bro = random.randint(0, len(BIO_STRINGS) - 1)    
         #input_str = event.pattern_match.group(1)
