@@ -276,7 +276,7 @@ def register(**args):
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
                     text = "**OOF-UserBot ERROR REPORT**\n"
-                    text += "Mostra il file a @100101110 se non sai risolvere\n"
+                    text += "Mostra il file a @doggy_cheems o a @MarvynSTAR se non sai risolvere\n"
 
                     ftext = "========== DISCLAIMER =========="
                     ftext += "\nFile uploaded in logchat,"                
