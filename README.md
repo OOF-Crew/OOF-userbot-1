@@ -4,6 +4,7 @@ Nato dall'idea di far rinascere l'userbot di 100101110
 IL PROGETTO È FATTO PER ESSERE USATO DAI RISPETTIVI CREATORI
 IN CASO DI QUALSIASI TIPO DI PROBLEMA NE @doggy_cheems ne @marvynstar si assumono responsabilità 
 Poiché l'app è stata creata per essere usata da loro stessi e la repo è pubblica per esigenze dell applicazione
+È ESTREMAMENTE VIETATA LA VENDITA DEL PROGRAMMA
 
 # OOF-userbot
 
