@@ -30,7 +30,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "100101110"
 # -- Constants End -- #
 
 
-@bot.on(dev_cmd("newupdate ?(.*)", outgoing=True))
+@bot.on(dev_cmd("oofupdate ?(.*)", outgoing=True))
 async def updater(upd):
     "For .newupdate command, check if the bot is up to date, update if specified"
     await upd.edit('**Ricerca update in corso....**')
