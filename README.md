@@ -27,4 +27,4 @@ Poiché l'app è stata creata per essere usata da loro stessi e la repo è pubbl
 #### CONTATTI:
 
 [![Telegram](https://img.shields.io/badge/TG-%20@doggy-orange.svg)](https://t.me/doggy_cheems)
-[![Telegram](https://img.shields.io/badge/TG-%20@Marvyn-orange.svg)](https://t.me/MarvynSTAR)
+[![Telegram](https://img.shields.io/badge/TG-%20@Marvyn-purple.svg)](https://t.me/MarvynSTAR)
