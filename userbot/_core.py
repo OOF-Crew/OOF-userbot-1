@@ -70,9 +70,9 @@ async def unload(event):
     shortname = event.pattern_match["shortname"]
     try:
         remove_plugin(shortname)
-        await event.edit(f"**Unload** {shortname} **eseguito**")
+        await event.edit(f"**Rimozione di** {shortname} **eseguita**")
     except Exception as e:
-        await event.edit("**Unload** {shortname} **eseguito**\n{}".format(shortname, str(e)))
+        await event.edit("**Rimozione di** {shortname} **eseguita**\n{}".format(shortname, str(e)))
     await asyncio.sleep(DELETE_TIMEOUT)
     await event.delete()
 
