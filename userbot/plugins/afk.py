@@ -161,7 +161,7 @@ async def on_afk(event):
             else:
                 afk_since = f"`{int(seconds)}s` **ago**"
         msg = None
-        message_to_reply = f"**⛔️ {DEAFULTUSER} È AFK ⛔️\nDA** `{total_afk_time}`\n**QUINDI SEI PREGATO DI NON SPAMMARE🙂.**" + \
+        message_to_reply = f"**⛔️ {DEFAULTUSER} È AFK ⛔️\nDA** `{total_afk_time}`\n**QUINDI SEI PREGATO DI NON SPAMMARE🙂.**" + \
             f"\n\n**non so quando tornerà ma quando sarà online cercherà di rispondere a tutti 👍.**\n**MOTIVO**: {reason}" \
             if reason \
             else f"**⛔️ SONO AFK chissà che sto facendo🧐 ⛔️**\n\n**LASCIA UN MESSAGGIO SE DEVI CHIEDERMI QUALCOSA GRAZIE ‼️**\n**APPENA TORNO CERCO DI RISPONDERE 👍**"
