@@ -45,7 +45,7 @@ async def _(event):
 
             "⚠️OOF-bot⚙️"
 
-            "👍🏻OOF-bot da parte di @MarvynSTAR e @doggy_cheems👍🏻"
+            "da parte di @MarvynSTAR e @doggy_cheems👍🏻"
 
 
         ]
