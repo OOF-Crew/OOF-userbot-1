@@ -18,6 +18,10 @@ from userbot import ALIVE_NAME
 
 # =================== CONSTANT ===================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "OOF"
+# ============================================
+
+
+# =================== CONSTANT ===================
 global USER_AFK  # pylint:disable=E0602
 global afk_time  # pylint:disable=E0602
 global last_afk_message  # pylint:disable=E0602
@@ -157,7 +161,7 @@ async def on_afk(event):
             else:
                 afk_since = f"`{int(seconds)}s` **ago**"
         msg = None
-        message_to_reply = f"**⛔️ IL MIO PROPRIETARIO OVVERO {DEAFULTUSER} È AFK ⛔️\nDA** `{total_afk_time}`\n**QUINDI SEI PREGATO DI NON SPAMMARE🙂.**" + \
+        message_to_reply = f"**⛔️ {DEAFULTUSER} È AFK ⛔️\nDA** `{total_afk_time}`\n**QUINDI SEI PREGATO DI NON SPAMMARE🙂.**" + \
             f"\n\n**non so quando tornerà ma quando sarà online cercherà di rispondere a tutti 👍.**\n**MOTIVO**: {reason}" \
             if reason \
             else f"**⛔️ SONO AFK chissà che sto facendo🧐 ⛔️**\n\n**LASCIA UN MESSAGGIO SE DEVI CHIEDERMI QUALCOSA GRAZIE ‼️**\n**APPENA TORNO CERCO DI RISPONDERE 👍**"
