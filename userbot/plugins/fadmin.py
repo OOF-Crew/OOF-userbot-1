@@ -38,7 +38,7 @@ async def _(event):
             "**(8) Cambiare le info chat: ☑️**",
             "**(8) Cambiare le info chat: ✅**",
             "**Permessi attivati con successo**",
-            "**Promosso con Successo da: @IOIIIOIIIOI**"
+            "**Promosso con Successo da: OOF-bot**"
         ]
 
     for i in animation_ttl:
