@@ -38,13 +38,13 @@ async def startmute(event):
         else:
             return await event.edit("**Non sei admin bro!⚠️**")
         if is_muted(userid, chat_id):
-            return await event.edit("**User già mutato in questa chat**")
+            return await event.edit("**coglione hai gia mutato mutato questo utente**")
         try:
             mute(userid, chat_id)
         except Exception as e:
             await event.edit("Error occured!\nError is " + str(e))
         else:
-            await event.edit("Ok bro mute eseguito**")
+            await event.edit("SHUT THE FUCK UP LITTLE KID**")
 
 
 @command(outgoing=True, pattern=r"^.unmute ?(\d+)?")
@@ -70,13 +70,13 @@ async def endmute(event):
             return await event.edit("**Rispondi ad un user o inserisci ID user.**")
         chat_id = event.chat_id
         if not is_muted(userid, chat_id):
-            return await event.edit("**User non mutato in questa chat**")
+            return await event.edit("**questo utente non è ancora imbavagliato e può parlare**")
         try:
             unmute(userid, chat_id)
         except Exception as e:
             await event.edit("Error occured!\nError is " + str(e))
         else:
-            await event.edit("**Ok bro unmute eseguito**")
+            await event.edit("**Ok ora hai il mio permesso per parlare**")
             
 
 @command(outgoing=True, pattern=r"^.mute ?(\d+)?", allow_sudo=True)
@@ -120,7 +120,7 @@ async def startmute(event):
         except Exception as e:
             await event.edit("Error occured!\nError is " + str(e))
         else:
-            await event.edit("Ok bro mute eseguito**")
+            await event.edit("SHUT THE FUCK UP LITTLE KID**")
 
 
 @command(outgoing=True, pattern=r"^.unmute ?(\d+)?", allow_sudo=True)
