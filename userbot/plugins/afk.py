@@ -156,9 +156,9 @@ async def on_afk(event):
                 afk_since = f"`{int(seconds)}s` **ago**"
         msg = None
         message_to_reply = f"**⛔️ IL MIO PROPRIETARIO OVVERO {DEAFULTUSER} È AFK ⛔️\nDA** `{total_afk_time}`\n**QUINDI SEI PREGATO DI NON SPAMMARE🙂.**" + \
-            f"\n\n**QUANDO SONO ONLINE CERCO DI RISPONDERE A TUTTI👍.**\n**MOTIVO**: {reason}" \
+            f"\n\n**non saprai mai che sta facendo🤭 ma fatto sta che quando tornerà risponderà a tutti👍.**\n**MOTIVO**: {reason}" \
             if reason \
-            else f"**⛔️ AL MOMENTO SONO AFK ⛔️**\n\n**LASCIA UN MESSAGGIO SE DEVI CHIEDERMI QUALCOSA GRAZIE ‼️**\n**APPENA TORNO CERCO DI RISPONDERE 👍**"
+            else f"**⛔️ SONO AFK chissà che sto facendo🧐 ⛔️**\n\n**LASCIA UN MESSAGGIO SE DEVI CHIEDERMI QUALCOSA GRAZIE ‼️**\n**APPENA TORNO CERCO DI RISPONDERE 👍**"
         msg = await event.reply(message_to_reply)
         await asyncio.sleep(5)
         if event.chat_id in last_afk_message:  # pylint:disable=E0602
