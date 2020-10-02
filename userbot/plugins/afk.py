@@ -14,7 +14,7 @@ from datetime import datetime
 from userbot import bot
 from telethon import events
 from telethon.tl import functions, types
-from userbot import ALIVE_NAME, bot, CMD_list
+from userbot import ALIVE_NAME
 
 # =================== CONSTANT ===================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "OOF"
