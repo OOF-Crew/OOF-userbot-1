@@ -17,7 +17,7 @@ from telethon.tl import functions, types
 from userbot import ALIVE_NAME, bot, CMD_list
 
 # =================== CONSTANT ===================
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "OOF
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "OOF"
 global USER_AFK  # pylint:disable=E0602
 global afk_time  # pylint:disable=E0602
 global last_afk_message  # pylint:disable=E0602
