@@ -13,7 +13,7 @@ PREV_REPLY_MESSAGE = {}
 CACHE = {}
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "100101110"
-USER_BOT_WARN_ZERO = "**Coglione il mio Bot ti ha bloccato, la prossima volta evita di spammare 👎**"
+USER_BOT_WARN_ZERO = "**Coglione il mio OOF-userbot ti ha bloccato, la prossima volta evita di spammare 👎**"
 USER_BOT_NO_WARN = ("[╚ »✪« ╝ **OOF UserBot** ╚ »✪« ╝]\n\n"
                     "**Ciao, specifica perché mi stai scrivendo.**\n\n"
                     "**Scrivi `/start` e scegli il motivo.**\n\n"
@@ -37,7 +37,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                     await PREV_REPLY_MESSAGE[chat.id].delete()
                     del PREV_REPLY_MESSAGE[chat.id]
                 pmpermit_sql.approve(chat.id, reason)
-                await event.edit("Utente Approvato [{}](tg://user?id={})".format(firstname, chat.id))
+                await event.edit("Ok [{}](tg://user?id={}) ora puoi scrivermi".format(firstname, chat.id))
                 await asyncio.sleep(3)
                 await event.delete()
 
